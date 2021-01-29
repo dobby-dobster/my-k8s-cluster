@@ -1,0 +1,23 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: random-rabbitmq-consumer
+  namespace: random-rabbitmq
+spec:
+  selector:
+    matchLabels:
+      app: random-rabbitmq
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: random-rabbitmq
+        component: consumer
+    spec:
+      containers:
+      - image: 'docker.io/dobbydobster/vagrant_consumer'
+        name: rabbitmq-producer
+        command: ["/usr/local/bin/fetch.py"]
+      imagePullSecrets:
+      - name: dockerhub

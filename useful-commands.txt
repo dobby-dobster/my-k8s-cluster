@@ -1,0 +1,4 @@
+#
+# port-forward to rabbitmq ui
+kubectl --namespace=random-rabbitmq port-forward random-rabbitmq-66dc9b755d-ghjzf 15672:15672
+

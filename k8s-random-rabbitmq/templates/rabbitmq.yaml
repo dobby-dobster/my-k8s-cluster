@@ -1,0 +1,25 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: random-rabbitmq
+  namespace: random-rabbitmq
+spec:
+  selector:
+    matchLabels:
+      app: random-rabbitmq
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: random-rabbitmq
+        component: rabbitmq
+    spec:
+      containers:
+      - image: 'rabbitmq:management'
+        name: rabbitmq
+        ports:
+        - containerPort: 5672
+        - containerPort: 15672 # mgmt ui
+
+        
