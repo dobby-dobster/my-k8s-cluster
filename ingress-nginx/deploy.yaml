@@ -37,6 +37,7 @@ metadata:
   namespace: ingress-nginx
 data:
   use-proxy-protocol: 'true'
+  #22: "random-rabbitmq/random-rabbitmq:15672"
 ---
 # Source: ingress-nginx/templates/clusterrole.yaml
 apiVersion: rbac.authorization.k8s.io/v1
