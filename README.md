@@ -8,6 +8,7 @@ hello-kubernetes-second  | nginx-demo      | Yes
 random-rabbitmq          | random-rabbitmq | No
 random-rabbitmq-producer | random-rabbitmq | No
 random-rabbitmq-consumer | random-rabbitmq | No
+linkerd-*                | linkerd         | No
 
 
 #### hello-kubernetes-*
