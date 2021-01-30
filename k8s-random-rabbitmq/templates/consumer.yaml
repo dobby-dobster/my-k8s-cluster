@@ -21,3 +21,4 @@ spec:
         command: ["/usr/local/bin/fetch.py"]
       imagePullSecrets:
       - name: dockerhub
+

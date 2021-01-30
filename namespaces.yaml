@@ -7,3 +7,14 @@ apiVersion: v1
 kind: Namespace
 metadata:
   name: random-rabbitmq
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: efk
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: monitoring
+

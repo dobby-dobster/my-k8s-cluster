@@ -17,7 +17,7 @@ metadata:
   namespace: nginx-demo
   name: hello-kubernetes-second
 spec:
-  replicas: 3
+  replicas: 1
   selector:
     matchLabels:
       app: hello-kubernetes-second
