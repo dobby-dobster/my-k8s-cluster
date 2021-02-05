@@ -7,7 +7,7 @@ hello-kubernetes-second  | nginx-demo      | Yes
 random-rabbitmq          | random-rabbitmq | No
 random-rabbitmq-producer | random-rabbitmq | No
 random-rabbitmq-consumer | random-rabbitmq | No
-monitoring-stack*        | monitoring      | No
+doks-monitoring          | monitoring      | No
 
 #### hello-kubernetes-*
 
